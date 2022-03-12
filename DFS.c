@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// 그래프 2차원 배열
 int g[9][3] = {
 	{0,0,0},
 	{2,3,8},
@@ -12,8 +13,10 @@ int g[9][3] = {
 	{1,7,0}
 };
 
+// 방문 확인 1차원 배열
 bool v[9] = { false, false, false, false, false, false, false, false, false};
 
+// DFS 실행 메소드 (그래프 배열, 시작 지점, 방문 배열)
 void dfs(int g[9][3], int p, bool v[]) {
 	v[p] = true;
 	
